@@ -1,8 +1,13 @@
 @import "vendors/reboot";
 
+@import "atoms/variables";
 @import "atoms/wrapper";
 @import "atoms/headings";
 @import "atoms/fonts";
 @import "atoms/links";
+@import "atoms/lists";
+@import "atoms/images";
 @import "atoms/header";
 @import "atoms/footer";
+
+@import "organisms/_projet";

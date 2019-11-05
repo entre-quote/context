@@ -318,6 +318,14 @@ a, a:hover {
   color: #00f;
   text-decoration: none; }
 
+ul {
+  padding: 0;
+  list-style-type: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -335,5 +343,26 @@ footer {
     display: block; }
   footer p {
     margin-top: 2rem; }
+
+.projet {
+  display: flex; }
+  .projet section {
+    width: 63rem;
+    max-width: 100%; }
+  .projet aside {
+    width: calc(100% - 66rem);
+    margin-left: 3rem; }
+  .projet ul {
+    margin-bottom: 2rem; }
+  .projet li:not(:last-of-type) {
+    margin-bottom: 2rem; }
+  @media (max-width: 1000px) {
+    .projet {
+      display: block; }
+      .projet section,
+      .projet aside {
+        width: 100%; }
+      .projet aside {
+        margin-left: 0; } }
 
 /*# sourceMappingURL=styles.css.map */

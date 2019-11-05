@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.projet {
+  display: flex;
+
+  section {
+    width: 63rem;
+    max-width: 100%;
+  }
+
+  aside {
+    width: calc(100% - 66rem);
+    margin-left: 3rem;
+  }
+
+  ul {
+    margin-bottom: 2rem;
+  }
+
+  li {
+    &:not(:last-of-type) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media (max-width: $desktop-width) {
+    display: block;
+
+    section,
+    aside {
+      width: 100%;
+    }
+
+    aside {
+      margin-left: 0;
+    }
+  }
+}

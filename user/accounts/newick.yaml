@@ -4,8 +4,11 @@ fullname: Newick
 title: Administrator
 access:
   admin:
-    login: true
-    super: true
+    super: 'true'
+    login: 'true'
   site:
-    login: true
+    login: 'true'
 hashed_password: $2y$10$BOIH3lKdc4vCwgEXlHHCZuVV7r2cYdTY/vykLxTDU7/3RsMtk3SNm
+language: fr
+twofa_enabled: false
+twofa_secret: PUVQ2FDQ4NJWFFESAT2XWIBVEFYITO44

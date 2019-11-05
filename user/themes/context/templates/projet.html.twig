@@ -1,0 +1,18 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    <div class="projet">
+        <section>
+            <ul>
+                {% for image in page.media.images %}
+                    <li>
+                        {{image}}
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+        <aside>
+            {{ page.content }}
+        </aside>
+    </div>
+{% endblock %}
