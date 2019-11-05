@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+
+  nav {
+    font-size: 1.2rem;
+  }
+}

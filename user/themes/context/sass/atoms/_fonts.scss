@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%; /* 10px */
+  font-size: calc(1em * 0.625); /* fix */
+}
+
+body {
+  font-size: 1.6rem;
+}

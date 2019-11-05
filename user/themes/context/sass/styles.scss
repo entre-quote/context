@@ -1,3 +1,8 @@
-a {
-  color: red;
-}
+@import "vendors/reboot";
+
+@import "atoms/wrapper";
+@import "atoms/headings";
+@import "atoms/fonts";
+@import "atoms/links";
+@import "atoms/header";
+@import "atoms/footer";
