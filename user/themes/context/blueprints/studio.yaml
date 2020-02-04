@@ -9,4 +9,9 @@ form:
       fields:
         content:
           type: tab
-          title: "Projet"
+          title: "Studio"
+
+          fields:
+            header.english:
+              type: editor
+              label: "English version"
