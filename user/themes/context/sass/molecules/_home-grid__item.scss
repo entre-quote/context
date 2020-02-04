@@ -1,0 +1,18 @@
+.home-grid__item {
+  position: relative;
+  min-height: 200px;
+
+  a {
+    text-decoration: none;
+  }
+
+  .spot {
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: $main-color;
+  }
+}

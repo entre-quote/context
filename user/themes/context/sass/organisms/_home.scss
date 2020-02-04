@@ -1,0 +1,7 @@
+.home {
+
+  &-grid {
+    @extend %grid;
+    @extend %grid-3;
+  }
+}

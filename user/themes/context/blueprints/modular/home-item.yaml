@@ -1,0 +1,42 @@
+title: "Bloc de l'accueil"
+'@extends': 
+  type: default
+  context: blueprints://pages
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+
+      fields:
+        content:
+          type: tab
+          title: "Bloc accueil"
+
+          fields:
+            content:
+              unset@: true
+
+            header.link:
+              type: pages
+              size: medium
+              label: Lien vers la page
+              show_all: false
+              show_modular: false
+              show_root: false
+              toggleable: true
+
+            header.spot:
+              type: toggle
+              label: Pastille New
+              default: non
+              options:
+                non: Non
+                oui: Oui
+
+
+                
+
+
+

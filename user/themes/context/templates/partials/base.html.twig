@@ -36,11 +36,11 @@
             <img src="{{ theme_url }}/images/logo-context.svg" alt="Logo Context design">
             <h1>Context</h1>
         </a>
-        <nav>
-            <li><a href="">Work</a></li>
-            <li><a href="">Studio</a></li>
-            <li><a href="">Contact</a></li>
-        </nav>
+        {% block header_navigation %}
+            <nav class="main-nav">
+                {% include 'partials/navigation.html.twig' %}
+            </nav>
+        {% endblock %}
     </header>
 {% endblock %}
 

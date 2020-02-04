@@ -1,4 +1,26 @@
 nav {
-  display: flex;
-  align-items: center;
+  ul {
+    display: flex;
+    align-items: center;
+  }
+
+  li {
+    margin-left: 6rem;
+
+    &.selected {
+      border-bottom: 1px solid $main-color;
+    }
+
+    &.contact {
+      display: none;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    li {
+      &.contact {
+        display: block;
+      }
+    }
+  }
 }

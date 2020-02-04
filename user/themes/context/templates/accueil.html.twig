@@ -1,5 +1,9 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-    {{ page.content }}
+    <section class="home-grid">
+        {% for module in page.collection() %}
+            {{ module.content }}
+        {% endfor %}
+    </section>
 {% endblock %}

@@ -1,0 +1,9 @@
+<article class="home-grid__item">
+    <a href="{{ header.link }}">
+        {% set first_image = page.media.images|first %}
+        <img alt="" src="{{first_image.url}}"/>
+        <div class="spot">
+            {% if header.spot == "oui" %} new {% endif %}
+        </div>
+    </a>
+</article>
