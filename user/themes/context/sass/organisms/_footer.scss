@@ -1,0 +1,28 @@
+footer {
+  @extend %grid;
+  @extend %grid-3;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+
+  h2,
+  h3 {
+    font-size: $font-size;
+  }
+
+  h3 {
+    font-weight: normal;
+  }
+
+  div {
+    &:nth-child(2) {
+      a {
+        font-weight: 600;
+
+        &,
+        &:hover {
+        text-decoration: none;
+        }
+      }
+    }
+  }
+}

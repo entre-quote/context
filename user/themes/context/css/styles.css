@@ -288,15 +288,24 @@ template {
   display: none !important; }
 
 /*# sourceMappingURL=bootstrap-reboot.css.map */
-.wrapper {
-  width: 100rem;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 2rem 2rem 3rem; }
+footer, .studio {
+  display: grid;
+  grid-gap: 3rem; }
+  @media (max-width: 670px) {
+    footer, .studio {
+      grid-template-columns: 1fr; } }
 
-h1,
-h2 {
-  text-transform: uppercase; }
+footer {
+  grid-template-columns: repeat(3, minmax(300px, 1fr)); }
+
+.studio {
+  grid-template-columns: repeat(2, 1fr); }
+
+.wrapper {
+  width: 100%;
+  max-width: 96rem;
+  margin: 0 auto;
+  padding: 0 2rem; }
 
 h1 {
   font-size: 2rem; }
@@ -305,6 +314,26 @@ h2 {
   font-size: 1.6rem;
   line-height: 1.125; }
 
+@font-face {
+  font-family: 'montserrat';
+  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserrat';
+  src: url("../fonts/montserrat-italic-webfont.woff2") format("woff2"), url("../fonts/montserrat-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'montserrat';
+  src: url("../fonts/montserrat-medium-webfont.woff2") format("woff2"), url("../fonts/montserrat-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'montserrat';
+  src: url("../fonts/montserrat-semibold-webfont.woff2") format("woff2"), url("../fonts/montserrat-semibold-webfont.woff") format("woff");
+  font-weight: 600;
+  font-style: normal; }
 html {
   font-size: 62.5%;
   /* 10px */
@@ -312,11 +341,14 @@ html {
   /* fix */ }
 
 body {
-  font-size: 1.6rem; }
+  font-family: "montserrat", Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.31;
+  color: #333333; }
 
 a, a:hover {
-  color: #00f;
-  text-decoration: none; }
+  color: #333333;
+  text-decoration: underline; }
 
 ul {
   padding: 0;
@@ -326,23 +358,45 @@ img {
   max-width: 100%;
   height: auto; }
 
+.logo {
+  display: flex;
+  align-items: center; }
+  .logo img {
+    width: 6rem;
+    height: 6rem;
+    margin-right: 1rem; }
+  .logo h1 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-transform: none; }
+
+nav {
+  display: flex;
+  align-items: center; }
+
 header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  font-weight: bold; }
-  header nav {
-    font-size: 1.2rem; }
+  justify-content: space-between;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: 500; }
+  header a, header a:hover {
+    text-decoration: none; }
 
 footer {
-  font-size: 1.6rem;
-  line-height: 1.125; }
-  footer address {
-    margin-bottom: 0; }
-  footer a {
-    display: block; }
-  footer p {
-    margin-top: 2rem; }
+  padding-top: 3rem;
+  padding-bottom: 4rem; }
+  footer h2,
+  footer h3 {
+    font-size: 1.6rem; }
+  footer h3 {
+    font-weight: normal; }
+  footer div:nth-child(2) a {
+    font-weight: 600; }
+    footer div:nth-child(2) a, footer div:nth-child(2) a:hover {
+      text-decoration: none; }
 
 .projet {
   display: flex; }
