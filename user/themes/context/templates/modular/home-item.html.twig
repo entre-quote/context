@@ -1,4 +1,4 @@
-<article class="home-grid__item">
+<article class="home-grid__item home-grid__item--col-{{ header.width }}">
     <a href="{{ header.link }}">
         {% set first_image = page.media.images|first %}
         <img alt="" src="{{first_image.url}}"/>

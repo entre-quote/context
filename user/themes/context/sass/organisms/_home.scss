@@ -1,7 +1,8 @@
 .home {
 
   &-grid {
-    @extend %grid;
-    @extend %grid-3;
+    .gutter {
+      width: 4rem;
+    }
   }
 }

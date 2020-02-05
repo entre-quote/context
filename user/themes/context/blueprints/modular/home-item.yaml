@@ -18,6 +18,14 @@ form:
             content:
               unset@: true
 
+            header.width:
+              type: toggle
+              label: Nombre de colonne
+              default: one
+              options:
+                one: 1
+                two: 2
+
             header.link:
               type: pages
               size: medium

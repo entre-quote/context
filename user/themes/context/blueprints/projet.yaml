@@ -10,3 +10,14 @@ form:
         content:
           type: tab
           title: "Projet"
+
+          fields:
+            header.subtitle:
+              type: text
+              label: Sous titre
+            header.year:
+              type: text
+              label: Année
+            header.infos:
+              type: markdown
+              label: Infos complémentaires

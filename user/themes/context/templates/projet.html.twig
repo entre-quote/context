@@ -2,17 +2,29 @@
 
 {% block content %}
     <div class="projet">
-        <section>
+        <div>
             <ul>
                 {% for image in page.media.images %}
                     <li>
-                        {{image}}
+                        {{ image }}
                     </li>
                 {% endfor %}
             </ul>
-        </section>
-        <aside>
-            {{ page.content }}
-        </aside>
+        </div>
+
+        <div class="projet__title">
+            <h1>{{ page.title }}</h1>
+            <h2>{{ header.subtitle }}</h2>
+            {{ header.year }}
+        </div>
+
+        <div class="projet__infos">
+            <div>
+                {{ page.content }}
+            </div>
+            <div>
+                {{ header.infos|markdown }}
+            </div>
+        </div>
     </div>
 {% endblock %}

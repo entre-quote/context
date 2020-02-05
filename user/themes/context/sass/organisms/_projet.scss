@@ -1,17 +1,6 @@
 @charset "UTF-8";
 
 .projet {
-  display: flex;
-
-  section {
-    width: 63rem;
-    max-width: 100%;
-  }
-
-  aside {
-    width: calc(100% - 66rem);
-    margin-left: 3rem;
-  }
 
   ul {
     margin-bottom: 2rem;
@@ -23,16 +12,17 @@
     }
   }
 
-  @media (max-width: $desktop-width) {
-    display: block;
+  &__title {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 
-    section,
-    aside {
-      width: 100%;
+    h2 {
+      font-weight: normal;
     }
+  }
 
-    aside {
-      margin-left: 0;
-    }
+  &__infos {
+    @extend %grid;
+    @extend %grid-2;
   }
 }

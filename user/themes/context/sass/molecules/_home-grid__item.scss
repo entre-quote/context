@@ -2,6 +2,15 @@
   position: relative;
   min-height: 200px;
 
+  &--col {
+    &-one {
+      width: calc(33% - 2rem);
+    }
+    &-two {
+      width: calc(66% - 2rem);
+    }
+  }
+
   a {
     text-decoration: none;
   }

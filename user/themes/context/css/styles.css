@@ -288,17 +288,17 @@ template {
   display: none !important; }
 
 /*# sourceMappingURL=bootstrap-reboot.css.map */
-footer, .page-studio, .home-grid {
+footer, .page-studio, .projet__infos {
   display: grid;
   grid-gap: 3rem; }
   @media (max-width: 670px) {
-    footer, .page-studio, .home-grid {
+    footer, .page-studio, .projet__infos {
       grid-template-columns: 1fr; } }
 
-footer, .home-grid {
+footer {
   grid-template-columns: repeat(3, 1fr); }
 
-.page-studio {
+.page-studio, .projet__infos {
   grid-template-columns: repeat(2, 1fr); }
 
 .wrapper {
@@ -386,6 +386,10 @@ nav li {
 .home-grid__item {
   position: relative;
   min-height: 200px; }
+  .home-grid__item--col-one {
+    width: calc(33% - 2rem); }
+  .home-grid__item--col-two {
+    width: calc(66% - 2rem); }
   .home-grid__item a {
     text-decoration: none; }
   .home-grid__item .spot {
@@ -421,25 +425,17 @@ footer {
     footer div:nth-child(2) a, footer div:nth-child(2) a:hover {
       text-decoration: none; }
 
-.projet {
-  display: flex; }
-  .projet section {
-    width: 63rem;
-    max-width: 100%; }
-  .projet aside {
-    width: calc(100% - 66rem);
-    margin-left: 3rem; }
-  .projet ul {
-    margin-bottom: 2rem; }
-  .projet li:not(:last-of-type) {
-    margin-bottom: 2rem; }
-  @media (max-width: 1000px) {
-    .projet {
-      display: block; }
-      .projet section,
-      .projet aside {
-        width: 100%; }
-      .projet aside {
-        margin-left: 0; } }
+.projet ul {
+  margin-bottom: 2rem; }
+.projet li:not(:last-of-type) {
+  margin-bottom: 2rem; }
+.projet__title {
+  margin-top: 3rem;
+  margin-bottom: 2rem; }
+  .projet__title h2 {
+    font-weight: normal; }
+
+.home-grid .gutter {
+  width: 4rem; }
 
 /*# sourceMappingURL=styles.css.map */
