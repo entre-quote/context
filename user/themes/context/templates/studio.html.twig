@@ -7,13 +7,15 @@
         </div>
 
         <div>
-            {{ page.header.english }}
+            {{ page.header.english|markdown }}
         </div>
     </div>
 
     <div class="partnership">
-        {% for p in page.collection %}
-            {{ p.content }}
-        {% endfor %}
+        <div>
+            {% for p in page.collection %}
+                {{ p.content }}
+            {% endfor %}
+        </div>
     </div>
 {% endblock %}

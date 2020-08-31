@@ -1,0 +1,32 @@
+.partnership {
+  @extend %grid;
+  @extend %grid-2;
+  margin-top: 3rem;
+
+  & > div {
+  grid-column: 1/2;
+  }
+
+  &--list {
+    @extend %grid;
+    @extend %grid-2;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  h3,
+  p {
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+
+  p:empty {
+    display: none;
+  }
+}

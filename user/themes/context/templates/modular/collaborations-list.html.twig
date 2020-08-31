@@ -1,5 +1,9 @@
 <h2>Collaborations</h2>
 
-{% for p in page.collection %}
-    {{ p.content }}
-{% endfor %}
+<ul class="partnership--list">
+    {% for p in page.collection %}
+        <li>
+            {{ p.content }}
+        </li>
+    {% endfor %}
+</ul>

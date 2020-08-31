@@ -19,7 +19,12 @@ form:
             header.english:
               type: editor
               label: "English version"
-
-            header.partnership:
-              type: editor
-              label: "Collaborations"
+              codemirror:
+                mode: 'markdown'
+                indentUnit: 4
+                autofocus: true
+                indentWithTabs: false
+                lineNumbers: true
+                styleActiveLine: true
+                gutters: [ 'CodeMirror-lint-markers' ]
+                lint: true
