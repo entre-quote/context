@@ -1,3 +1,32 @@
+# v1.4.1
+## 05/20/2020
+
+1. [](#improved)
+    * Make name key Composer 2.0 compatible [#48](https://github.com/getgrav/grav-plugin-devtools/pull/48)
+1. [](#bugfix)
+    * Correct type for themes [#49](https://github.com/getgrav/grav-plugin-devtools/pull/49)
+
+# v1.4.0
+## 04/27/2020
+
+1. [](#new)
+    * Added new required `slug:` and `type:` attributes to blueprints
+1. [](#improved)
+    * Fixed plugin autoload
+
+# v1.3.1
+## 02/24/2020
+
+1. [](#improved)
+    * Set `validation: loose` in plugin blueprints by default
+    * Add Grav 1.6 dependency to all new plugins and themes
+
+# v1.3.0
+## 02/13/2020
+
+1. [](#improved)
+    * Added composer-based autoloader to the `new-plugin` command
+
 # v1.2.4
 ## 11/06/2019
 

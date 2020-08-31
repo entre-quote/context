@@ -1,5 +1,5 @@
 //************************************************************************//
-// Shorthand Border-radius placeholders
+// Shorthand Border-radius mixins
 //************************************************************************//
 @mixin border-top-radius($radii) {
   @include prefixer(border-top-left-radius, $radii, spec);
