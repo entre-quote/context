@@ -12,6 +12,8 @@
     </div>
 
     <div class="partnership">
-        {{ page.header.partnership }}
+        {% for p in page.collection %}
+            {{ p.content }}
+        {% endfor %}
     </div>
 {% endblock %}

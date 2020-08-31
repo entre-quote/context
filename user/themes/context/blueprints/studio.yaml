@@ -12,6 +12,14 @@ form:
           title: "Studio"
 
           fields:
+
+            header.media_order:
+              unset@: true
+
             header.english:
               type: editor
               label: "English version"
+
+            header.partnership:
+              type: editor
+              label: "Collaborations"
