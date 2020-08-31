@@ -1,8 +1,8 @@
 ---
 title: Arithméthique
-media_order: 37d0796ec9157882969c4d24719fd1c1c9e97f09.jpg
+media_order: Arit_Web_Depliant_2019_Home_01.jpg
 width: one
 link: /projets/arithmethique
-spot: oui
+spot: non
 ---
 
