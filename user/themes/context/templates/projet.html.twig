@@ -1,7 +1,7 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-    <div class="projet">
+    <div class="projet wrapper">
         <div>
             <ul>
                 {% for image in page.media.images %}
@@ -12,18 +12,20 @@
             </ul>
         </div>
 
-        <div class="projet__title">
-            <h1>{{ page.title }}</h1>
-            <h2>{{ header.subtitle }}</h2>
-            {{ header.year }}
-        </div>
-
-        <div class="projet__infos">
-            <div>
-                {{ page.content }}
+        <div>
+            <div class="projet__title">
+                <h1>{{ page.title }}</h1>
+                <h2>{{ header.subtitle }}</h2>
+                {{ header.year }}
             </div>
-            <div>
-                {{ header.infos|markdown }}
+
+            <div class="projet__infos">
+                <div>
+                    {{ page.content }}
+                </div>
+                <div>
+                    {{ header.infos|markdown }}
+                </div>
             </div>
         </div>
     </div>

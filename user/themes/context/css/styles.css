@@ -288,22 +288,22 @@ template {
   display: none !important; }
 
 /*# sourceMappingURL=bootstrap-reboot.css.map */
-footer, .page-studio, .projet__infos {
+footer, .page-studio, .projet__infos, .partnership, .partnership--list {
   display: grid;
   grid-gap: 3rem; }
-  @media (max-width: 670px) {
-    footer, .page-studio, .projet__infos {
+  @media (max-width: 780px) {
+    footer, .page-studio, .projet__infos, .partnership, .partnership--list {
       grid-template-columns: 1fr; } }
 
 footer {
   grid-template-columns: repeat(3, 1fr); }
 
-.page-studio, .projet__infos {
+.page-studio, .projet__infos, .partnership, .partnership--list {
   grid-template-columns: repeat(2, 1fr); }
 
 .wrapper {
   width: 100%;
-  max-width: 100rem;
+  max-width: 160rem;
   margin: 0 auto;
   padding: 0 2rem; }
 
@@ -358,6 +358,9 @@ img {
   max-width: 100%;
   height: auto; }
 
+p:last-child {
+  margin-bottom: 0; }
+
 .logo {
   display: flex;
   align-items: center; }
@@ -379,17 +382,13 @@ nav li {
     border-bottom: 1px solid #333333; }
   nav li.contact {
     display: none; }
-@media (max-width: 670px) {
+@media (max-width: 780px) {
   nav li.contact {
     display: block; } }
 
 .home-grid__item {
   position: relative;
   min-height: 200px; }
-  .home-grid__item--col-one {
-    width: calc(33% - 2rem); }
-  .home-grid__item--col-two {
-    width: calc(66% - 2rem); }
   .home-grid__item a {
     text-decoration: none; }
   .home-grid__item .spot {
@@ -425,17 +424,39 @@ footer {
     footer div:nth-child(2) a, footer div:nth-child(2) a:hover {
       text-decoration: none; }
 
-.projet ul {
-  margin-bottom: 2rem; }
-.projet li:not(:last-of-type) {
-  margin-bottom: 2rem; }
-.projet__title {
-  margin-top: 3rem;
-  margin-bottom: 2rem; }
-  .projet__title h2 {
-    font-weight: normal; }
+.projet {
+  display: grid;
+  grid-template-columns: 108rem 1fr; }
+  .projet ul {
+    --gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+    width: calc(100% + var(--gap)); }
+  .projet li > * {
+    margin: var(--gap) 0 0 var(--gap); }
+  .projet__title {
+    margin-top: 3rem;
+    margin-bottom: 2rem; }
+    .projet__title h2 {
+      font-weight: normal; }
 
 .home-grid .gutter {
   width: 4rem; }
+
+.partnership {
+  margin-top: 3rem; }
+  .partnership > div {
+    grid-column: 1/2; }
+  .partnership h2 {
+    font-size: 2.4rem; }
+  .partnership h3,
+  .partnership p {
+    margin: 0; }
+  .partnership h3 {
+    font-size: 1.6rem;
+    font-weight: bold; }
+  .partnership p:empty {
+    display: none; }
 
 /*# sourceMappingURL=styles.css.map */

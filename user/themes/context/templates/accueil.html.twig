@@ -12,14 +12,13 @@
 
     <script src="{{ theme_url }}/js/masonry.pkgd.min.js"></script>
     <script>
-        document.onreadystatechange = function () {
-            if (document.readyState === "interactive") {
-                var msnry = new Masonry('.home-grid', {
-                    itemSelector: '.item',
-                    columnWidth: '.item',
-                    gutter: '.gutter'
-                })
-            }
-        };
+        $(window).load(function () {
+            $('.home-grid').masonry({
+                itemSelector: '.item',
+                columnWidth: '.item',
+                gutter: '.gutter'
+            })
+        });
+
     </script>
 {% endblock %}

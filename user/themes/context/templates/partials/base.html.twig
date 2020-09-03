@@ -23,6 +23,12 @@
         {% do assets.addCss('theme://css/styles.css', 98) %}
     {% endblock %}
 
+    {% block javascripts %}
+        {% do assets.addJs('jquery', 100) %}
+    {% endblock %}
+
+    {{ assets.js()|raw }}
+
     {% block assets deferred %}
     {{ assets.css()|raw }}
     {% endblock %}
