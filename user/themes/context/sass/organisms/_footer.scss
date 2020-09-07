@@ -25,4 +25,9 @@ footer {
       }
     }
   }
+
+  @media (max-width: $m-width) {
+    display: block;
+    padding-bottom: 3rem;
+  }
 }

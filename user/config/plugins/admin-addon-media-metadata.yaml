@@ -1,0 +1,23 @@
+enabled: true
+
+metadata_form:
+  fields:
+  - type: hidden
+    title: PLUGIN_ADMIN_ADDON_MEDIA_METADATA.FILENAME
+    name: filename
+    readonly: true
+
+  - type: select
+    label: Nombre de colonnes
+    name: orientation
+    options:
+      default: '1 colonne'
+      large: '2 colonnes'
+
+  - type: text
+    label: PLUGIN_ADMIN_ADDON_MEDIA_METADATA.TITLE
+    name: title
+    
+  - type: text
+    label: PLUGIN_ADMIN_ADDON_MEDIA_METADATA.ALT
+    name: alt

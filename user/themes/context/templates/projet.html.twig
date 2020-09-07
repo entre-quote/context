@@ -1,25 +1,27 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-    <div class="projet wrapper">
-        <div>
+    <div class="projet">
+        <div class="projet--images">
             <ul>
                 {% for image in page.media.images %}
-                    <li>
+                    <li {% if image.meta.orientation %}
+                            class="image-{{ image.meta.orientation }}"
+                        {% endif %}>
                         {{ image }}
                     </li>
                 {% endfor %}
             </ul>
         </div>
 
-        <div>
-            <div class="projet__title">
+        <div class="projet--text">
+            <div class="projet--title">
                 <h1>{{ page.title }}</h1>
                 <h2>{{ header.subtitle }}</h2>
                 {{ header.year }}
             </div>
 
-            <div class="projet__infos">
+            <div class="projet--infos">
                 <div>
                     {{ page.content }}
                 </div>
