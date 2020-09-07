@@ -6,8 +6,8 @@
             <ul>
                 {% for image in page.media.images %}
                     <li {% if image.meta.orientation %}
-                            class="image-{{ image.meta.orientation }}"
-                        {% endif %}>
+                        class="image-{{ image.meta.orientation }}"
+                            {% endif %}>
                         {{ image }}
                     </li>
                 {% endfor %}
@@ -15,18 +15,20 @@
         </div>
 
         <div class="projet--text">
-            <div class="projet--title">
-                <h1>{{ page.title }}</h1>
-                <h2>{{ header.subtitle }}</h2>
-                {{ header.year }}
-            </div>
-
-            <div class="projet--infos">
-                <div>
-                    {{ page.content }}
+            <div>
+                <div class="projet--title">
+                    <h1>{{ page.title }}</h1>
+                    <h2>{{ header.subtitle }}</h2>
+                    {{ header.year }}
                 </div>
-                <div>
-                    {{ header.infos|markdown }}
+
+                <div class="projet--infos">
+                    <div>
+                        {{ page.content }}
+                    </div>
+                    <div>
+                        {{ header.infos|markdown }}
+                    </div>
                 </div>
             </div>
         </div>
