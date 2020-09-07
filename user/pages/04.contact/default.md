@@ -1,5 +1,6 @@
 ---
 title: Contact
+visible: false
 ---
 
 Cité Créative - Halle Tropisme 

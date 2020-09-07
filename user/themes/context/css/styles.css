@@ -385,11 +385,6 @@ nav li {
   margin-left: 6rem; }
   nav li.selected {
     border-bottom: 1px solid #333333; }
-  nav li.contact {
-    display: none; }
-@media (max-width: 780px) {
-  nav li.contact {
-    display: block; } }
 
 .home-grid__item {
   position: relative;

@@ -10,17 +10,5 @@ nav {
     &.selected {
       border-bottom: 1px solid $main-color;
     }
-
-    &.contact {
-      display: none;
-    }
-  }
-
-  @media (max-width: $m-width) {
-    li {
-      &.contact {
-        display: block;
-      }
-    }
   }
 }
