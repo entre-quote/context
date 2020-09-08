@@ -1,4 +1,29 @@
 .page-studio {
   @extend %grid;
   @extend %grid-2;
+
+  & > div {
+    &:first-child {
+      font-size: 1.8rem;
+    }
+  }
+
+  @media (max-width: $l-width) {
+    display: block;
+
+    & > div {
+      &:last-child {
+        margin-top: 3rem;
+      }
+    }
+  }
+
+  @media (max-width: $m-width) {
+
+    & > div {
+      &:last-child {
+        margin-top: 2rem;
+      }
+    }
+  }
 }
