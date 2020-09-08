@@ -15,12 +15,12 @@
 
         $(window).load(function () {
             $('.home-grid').isotope({
-                itemSelector: '.home-item',
-                percentPosition: true,
                 masonry: {
                     columnWidth: '.home-item',
                     gutter: '.home-grid-gutter'
-                }
+                },
+                itemSelector: '.home-item',
+                percentPosition: true,
             });
         });
     </script>

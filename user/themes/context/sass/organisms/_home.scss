@@ -19,18 +19,16 @@
 
   &-item {
     float: left;
-    max-width: 34rem;
     width: calc(25% - 3rem);
     margin-bottom: 3rem;
 
     &_col-two {
-      max-width: 71rem;
-      width: calc(50% - 3rem);
+      //max-width: 71rem;
+      width: 50%;
     }
 
     article {
       position: relative;
-      min-height: 200px;
 
       a {
         display: block;
@@ -45,6 +43,66 @@
         font-weight: 500;
         color: #fff;
         background-color: $main-color;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: $xl-width) {
+    &-item {
+      width: 34rem;
+
+      &_col-two {
+        width: 71rem;
+      }
+    }
+  }
+
+  @media (max-width: $l-width) {
+    &-item {
+      width: calc(33.333% - 3rem);
+
+      &_col-two {
+        width: 66.666%;
+      }
+    }
+  }
+
+  @media (min-width: $m-width) and (max-width: $l-width) {
+    &-grid {
+
+      &-gutter {
+        width: 2rem;
+      }
+    }
+
+    &-item {
+      width: calc(50% - 1rem);
+
+      &_col-two {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: $m-width) {
+    &-grid {
+
+      &-gutter {
+        width: 0;
+        display: none;
+      }
+    }
+
+    &-item {
+      width: 100%;
+      max-width: 100%;
+
+      &_col-two {
+        width: 100%;
       }
     }
   }
