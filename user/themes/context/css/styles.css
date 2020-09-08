@@ -386,20 +386,6 @@ nav li {
   nav li.selected {
     border-bottom: 1px solid #333333; }
 
-.home-grid__item {
-  position: relative;
-  min-height: 200px; }
-  .home-grid__item a {
-    text-decoration: none; }
-  .home-grid__item .spot {
-    position: absolute;
-    right: 2rem;
-    bottom: 2rem;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #fff;
-    background-color: #333333; }
-
 header {
   display: flex;
   align-items: center;
@@ -473,8 +459,36 @@ footer {
     .projet--infos > div:last-child {
       margin-top: 2rem; } }
 
-.home-grid .gutter {
-  width: 4rem; }
+.home.wrapper {
+  max-width: 100%; }
+.home-grid:after {
+  content: '';
+  display: block;
+  clear: both; }
+.home-grid-gutter {
+  width: 3rem; }
+.home-item {
+  float: left;
+  max-width: 34rem;
+  width: calc(25% - 3rem);
+  margin-bottom: 3rem; }
+  .home-item_col-two {
+    max-width: 71rem;
+    width: calc(50% - 3rem); }
+  .home-item article {
+    position: relative;
+    min-height: 200px; }
+    .home-item article a {
+      display: block;
+      text-decoration: none; }
+    .home-item article .spot {
+      position: absolute;
+      right: 2rem;
+      bottom: 2rem;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #fff;
+      background-color: #333333; }
 
 .partnership {
   margin-top: 3rem; }

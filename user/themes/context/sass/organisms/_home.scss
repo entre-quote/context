@@ -1,8 +1,51 @@
 .home {
 
+  &.wrapper {
+    max-width: 100%;
+  }
+
   &-grid {
-    .gutter {
-      width: 4rem;
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    &-gutter {
+      width: 3rem;
+    }
+  }
+
+  &-item {
+    float: left;
+    max-width: 34rem;
+    width: calc(25% - 3rem);
+    margin-bottom: 3rem;
+
+    &_col-two {
+      max-width: 71rem;
+      width: calc(50% - 3rem);
+    }
+
+    article {
+      position: relative;
+      min-height: 200px;
+
+      a {
+        display: block;
+        text-decoration: none;
+      }
+
+      .spot {
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #fff;
+        background-color: $main-color;
+      }
     }
   }
 }

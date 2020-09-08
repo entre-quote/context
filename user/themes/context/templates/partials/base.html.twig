@@ -24,13 +24,12 @@
     {% endblock %}
 
     {% block javascripts %}
-        {% do assets.addJs('jquery', 100) %}
+        {% do assets.addJs('theme://js/jquery.min.js', 100) %}
     {% endblock %}
-
-    {{ assets.js()|raw }}
 
     {% block assets deferred %}
     {{ assets.css()|raw }}
+    {{ assets.js()|raw }}
     {% endblock %}
 </head>
 
