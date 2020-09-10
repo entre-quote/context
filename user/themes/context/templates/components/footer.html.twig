@@ -1,0 +1,16 @@
+<footer>
+    <div>
+        <h2>Context</h2>
+        {% set contact = { items: {'@page.self': '/contact'}} %}
+
+        {% for cntct in page.collection(contact) %}
+            {{ cntct.content }}
+        {% endfor %}
+    </div>
+    <div>
+        <h3>Design</h3>
+        <a href="{{ base_url == '' ? '/' : base_url }}">© {{ "now"|date("Y") }} Context</a>
+        <h3>Intégration</h3>
+        <a href="https://entre-quote.com">Erick Gardin</a>
+    </div>
+</footer>
