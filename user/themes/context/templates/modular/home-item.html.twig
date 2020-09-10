@@ -3,8 +3,11 @@
         {% set first_image = page.media|first %}
 
         <img alt="" src="{{ first_image.url }}"/>
-        <div class="spot">
-            {% if header.spot == "oui" %} new {% endif %}
-        </div>
+        
+        {% if header.spot == "oui" %}
+            <div class="spot">
+                new
+            </div>
+        {% endif %}
     </a>
 </article>
