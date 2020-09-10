@@ -1,5 +1,5 @@
 <article>
-    <a href="{{ header.link }}">
+    <a href="{{ base_url_absolute }}{{ header.link }}">
         {% set first_image = page.media|first %}
 
         <img alt="" src="{{ first_image.url }}"/>
