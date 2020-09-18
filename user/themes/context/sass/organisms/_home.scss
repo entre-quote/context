@@ -33,21 +33,6 @@
         display: block;
         text-decoration: none;
       }
-
-      .spot {
-        position: absolute;
-        right: 2rem;
-        bottom: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 5rem;
-        height: 5rem;
-        font-size: 1rem;
-        font-weight: 500;
-        color: #fff;
-        background: url(../images/icon-new.svg) center center no-repeat;
-      }
     }
 
     img {
