@@ -23,7 +23,7 @@
     margin-bottom: 3rem;
 
     &_col-two {
-      width: 50%;
+      width: calc(50% - 3rem);
     }
 
     article {
@@ -65,17 +65,17 @@
     }
   }
 
-  @media (max-width: $l-width) {
+  @media (min-width: 860px) and (max-width: 1300px) {
     &-item {
       width: calc(33.333% - 3rem);
 
       &_col-two {
-        width: 66.666%;
+        width: calc(66.666% - 3rem);
       }
     }
   }
 
-  @media (min-width: $m-width) and (max-width: $l-width) {
+  @media (max-width: 860px) {
     &-grid {
 
       &-gutter {
@@ -92,7 +92,7 @@
     }
   }
 
-  @media (max-width: $m-width) {
+  @media (max-width: 440px) {
     &-grid {
 
       &-gutter {
