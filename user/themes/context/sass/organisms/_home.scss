@@ -19,11 +19,11 @@
 
   &-item {
     float: left;
-    width: calc(25% - 3rem);
+    width: calc(25% - 2.25rem);
     margin-bottom: 3rem;
 
     &_col-two {
-      width: calc(50% - 3rem);
+      width: calc(50% - 1.65rem);
     }
 
     article {
@@ -52,10 +52,10 @@
 
   @media (min-width: $m-width) and (max-width: $l-width) {
     &-item {
-      width: calc(33.333% - 3rem);
+      width: calc(33.333% - 2rem);
 
       &_col-two {
-        width: calc(66.666% - 3rem);
+        width: calc(66.666% - 1.1rem);
       }
     }
   }
@@ -70,6 +70,7 @@
 
     &-item {
       width: calc(50% - 1rem);
+      margin-bottom: 2rem;
 
       &_col-two {
         width: 100%;
