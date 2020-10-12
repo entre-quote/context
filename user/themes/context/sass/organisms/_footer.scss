@@ -1,6 +1,5 @@
 footer {
-  @extend %grid;
-  @extend %grid-3;
+  display: flex;
   padding-top: 3rem;
   padding-bottom: 4rem;
 
@@ -14,34 +13,83 @@ footer {
   }
 
   div {
+    &:first-child {
+      width: calc(20% - 2.2rem);
+      margin-right: 3rem;
+    }
+
     &:nth-child(2) {
       a {
         font-weight: 600;
 
         &,
         &:hover {
-        text-decoration: none;
+          text-decoration: none;
         }
       }
     }
   }
 
-  @media (max-width: $m-width) {
+  @media (max-width: $xl-width) {
+    div:first-child {
+      width: calc(25% - 2.4rem);
+    }
+  }
+
+  @media (max-width: $l-width) {
+    div:first-child {
+      width: calc(33.3333% - 2.2rem);
+    }
+  }
+
+  @media (min-width: 610px) and (max-width: $m-width) {
+    div:first-child {
+      width: calc(50% - 1rem);
+      margin-right: 2rem;
+    }
+  }
+
+  @media (max-width: 610px) {
+    padding-top: 0;
     display: block;
     padding-bottom: 3rem;
+
+    div {
+      &:first-child {
+        width: 100%;
+      }
+
+      &:last-child {
+      margin-top: 2rem;
+      }
+    }
   }
 }
 
 .mobile-footer {
   display: none;
-
   position: absolute;
   bottom: 0;
   font-size: 1.6rem;
   padding-left: 2rem;
 
-  footer > div:last-child {
-    display: none;
+  footer > div {
+    &:first-child {
+      width: 100%;
+    }
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  a {
+    font-weight: normal;
+
+    &,
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   @media (max-width: $m-width) {

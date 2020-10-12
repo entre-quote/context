@@ -1,16 +1,43 @@
 %grid {
-  display: grid;
-  grid-gap: 3rem;
+  display: flex;
+  margin: -3rem 0 0 -3rem;
+  width: calc(100% + 3rem);
+
+  /*@supports (display: grid) {
+    display: grid;
+    grid-gap: 3rem;
+  }*/
 
   @media (max-width: $m-width) {
-    grid-template-columns: 1fr;
+    display: block;
+    margin: -2rem 0 0 -2rem;
   }
 }
 
 %grid-3 {
+
+  & > * {
+    flex-basis: 33.333%;
+    margin: 3rem 0 0 3rem;
+
+
+
+  }
+
+  /*@supports (display: grid) {
   grid-template-columns: repeat(3, 1fr);
+  }*/
 }
 
+
 %grid-2 {
+
+   & > * {
+     flex-basis: 50%;
+     margin: 3rem 0 0 3rem;
+   }
+
+  /*@supports (display: grid) {
   grid-template-columns: repeat(2, 1fr);
+  }*/
 }

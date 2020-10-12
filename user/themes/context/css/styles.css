@@ -288,23 +288,30 @@ template {
   display: none !important; }
 
 /*# sourceMappingURL=bootstrap-reboot.css.map */
-footer, .page-studio, .projet--infos, .partnership, .partnership--list {
-  display: grid;
-  grid-gap: 3rem; }
+.page-studio, .projet--infos, .partnership, .partnership--list {
+  display: flex;
+  margin: -3rem 0 0 -3rem;
+  width: calc(100% + 3rem);
+  /*@supports (display: grid) {
+    display: grid;
+    grid-gap: 3rem;
+  }*/ }
   @media (max-width: 860px) {
-    footer, .page-studio, .projet--infos, .partnership, .partnership--list {
-      grid-template-columns: 1fr; } }
-
-footer {
-  grid-template-columns: repeat(3, 1fr); }
+    .page-studio, .projet--infos, .partnership, .partnership--list {
+      display: block;
+      margin: -2rem 0 0 -2rem; } }
 
 .page-studio, .projet--infos, .partnership, .partnership--list {
-  grid-template-columns: repeat(2, 1fr); }
+  /*@supports (display: grid) {
+  grid-template-columns: repeat(2, 1fr);
+  }*/ }
+  .page-studio > *, .projet--infos > *, .partnership > *, .partnership--list > * {
+    flex-basis: 50%;
+    margin: 3rem 0 0 3rem; }
 
 .wrapper {
   width: 100%;
-  max-width: 160rem;
-  margin: 0 auto;
+  max-width: 2160px;
   padding: 0 2rem; }
 
 h1,
@@ -399,6 +406,7 @@ header {
     text-decoration: none; }
 
 footer {
+  display: flex;
   padding-top: 3rem;
   padding-bottom: 4rem; }
   footer h2,
@@ -406,14 +414,32 @@ footer {
     font-size: 1.6rem; }
   footer h3 {
     font-weight: normal; }
+  footer div:first-child {
+    width: calc(20% - 2.2rem);
+    margin-right: 3rem; }
   footer div:nth-child(2) a {
     font-weight: 600; }
     footer div:nth-child(2) a, footer div:nth-child(2) a:hover {
       text-decoration: none; }
-  @media (max-width: 860px) {
+  @media (max-width: 1730px) {
+    footer div:first-child {
+      width: calc(25% - 2.4rem); } }
+  @media (max-width: 1300px) {
+    footer div:first-child {
+      width: calc(33.3333% - 2.2rem); } }
+  @media (min-width: 610px) and (max-width: 860px) {
+    footer div:first-child {
+      width: calc(50% - 1rem);
+      margin-right: 2rem; } }
+  @media (max-width: 610px) {
     footer {
+      padding-top: 0;
       display: block;
-      padding-bottom: 3rem; } }
+      padding-bottom: 3rem; }
+      footer div:first-child {
+        width: 100%; }
+      footer div:last-child {
+        margin-top: 2rem; } }
 
 .mobile-footer {
   display: none;
@@ -421,8 +447,14 @@ footer {
   bottom: 0;
   font-size: 1.6rem;
   padding-left: 2rem; }
+  .mobile-footer footer > div:first-child {
+    width: 100%; }
   .mobile-footer footer > div:last-child {
     display: none; }
+  .mobile-footer a {
+    font-weight: normal; }
+    .mobile-footer a, .mobile-footer a:hover {
+      text-decoration: underline; }
   @media (max-width: 860px) {
     .mobile-footer {
       display: block; } }
@@ -483,8 +515,6 @@ footer {
     .projet--infos > div:last-child {
       margin-top: 2rem; } }
 
-.home.wrapper {
-  max-width: 100%; }
 .home-grid:after {
   content: '';
   display: block;
@@ -504,11 +534,11 @@ footer {
       text-decoration: none; }
   .home-item img {
     width: 100%; }
-@media (min-width: 1490px) {
+@media (min-width: 1730px) {
   .home-item {
-    width: 34rem; }
+    width: calc(20% - 2.4rem); }
     .home-item_col-two {
-      width: 71rem; } }
+      width: calc(40% - 1.7rem); } }
 @media (min-width: 860px) and (max-width: 1300px) {
   .home-item {
     width: calc(33.333% - 2rem); }
@@ -531,6 +561,11 @@ footer {
     max-width: 100%; }
     .home-item_col-two {
       width: 100%; } }
+.home footer {
+  padding-top: 1rem; }
+  @media (max-width: 610px) {
+    .home footer {
+      padding-top: .5rem; } }
 
 .partnership {
   margin-top: 3rem; }

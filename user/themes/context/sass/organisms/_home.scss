@@ -1,9 +1,5 @@
 .home {
 
-  &.wrapper {
-    max-width: 100%;
-  }
-
   &-grid {
 
     &:after {
@@ -42,10 +38,10 @@
 
   @media (min-width: $xl-width) {
     &-item {
-      width: 34rem;
+      width: calc(20% - 2.4rem);
 
       &_col-two {
-        width: 71rem;
+        width: calc(40% - 1.7rem);
       }
     }
   }
@@ -94,6 +90,15 @@
       &_col-two {
         width: 100%;
       }
+    }
+  }
+
+
+  footer {
+    padding-top: 1rem;
+
+    @media (max-width: 610px) {
+      padding-top: .5rem;
     }
   }
 }
