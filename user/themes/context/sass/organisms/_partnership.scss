@@ -1,15 +1,15 @@
 .partnership {
-  @extend %grid;
-  @extend %grid-2;
   margin-top: 3rem;
 
-  & > div {
-  grid-column: 1/2;
-  }
-
   &--list {
-    @extend %grid;
-    @extend %grid-2;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -2rem 0 0 -5rem;
+
+    & > li {
+      flex-basis: calc(25% - 6.5rem);
+      margin: 3rem 0 0 5rem;
+    }
   }
 
   h2 {
@@ -32,12 +32,29 @@
   }
 
   @media (max-width: $l-width) {
-    & > div {
-      grid-column: 1/3;
+    &--list {
+      & > li {
+        flex-basis: calc(33.3333% - 5rem);
+      }
     }
   }
 
   @media (max-width: $m-width) {
+    margin-top: 2rem;
+
+    &--list {
+    margin-top: 0;
+
+      & > li {
+        flex-basis: calc(50% - 5rem);
+        margin-top: 2rem;
+      }
+    }
+  }
+
+
+
+  @media (max-width: $s-width) {
     &--list {
       display: block;
     }

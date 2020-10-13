@@ -1,6 +1,7 @@
 ---
 title: Studio
 english: "_Texte en version anglaise. **Lorem** ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. \r\nAt vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed. Quisciis doluptia suntus as inum enducilique nus maio et adigendictur si sequam ex et vitis ut pos as a voloreicimus rem que pe perrum qui te cusdae reprovi tiissimiliti ulpa con pliquid erestib eratur moloreic tempe doluptatibea sum fuga.\r\nCuptas si dolupta se nia sit poribus, eatem sandipsapid ma volor as vendae officiet aceate acerfer itatiis mos sequia comnimil mostem rae. Nequi rentios aeseque eos de reperferro tet accupta dollupi cipsunt.\r\nDi aut utatur aliquae dolore eossi offic totatio dolorpore sa conesse es volorae officit am et reritat.\r\nAccatiae mo imus quiam eiur?_"
+body_classes: studio-page
 content:
     items: '@self.modular'
 ---
