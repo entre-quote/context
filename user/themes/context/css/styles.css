@@ -440,10 +440,13 @@ footer {
 
 .studio {
   display: flex; }
-  .studio > div:first-child {
-    font-size: 1.8rem; }
-  .studio > div:last-child {
-    margin-left: 5rem; }
+  .studio > div {
+    width: calc(50% - 2.5rem); }
+    .studio > div:first-child {
+      font-size: 1.8rem; }
+    .studio > div:last-child {
+      margin-left: 5rem;
+      font-style: italic; }
   .studio-page footer div:first-child {
     width: calc(25% - 3.4rem); }
   @media (max-width: 1300px) {
@@ -580,8 +583,9 @@ footer {
       flex-basis: calc(25% - 6.5rem);
       margin: 3rem 0 0 5rem; }
   .partnership h2 {
+    margin-bottom: 2rem;
     font-size: 2.4rem;
-    margin-bottom: 2rem; }
+    font-weight: 500; }
   .partnership h3,
   .partnership p {
     margin: 0; }

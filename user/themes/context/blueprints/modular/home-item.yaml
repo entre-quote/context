@@ -35,13 +35,6 @@ form:
               show_root: false
               toggleable: true
 
-            header.spot:
-              type: toggle
-              label: Pastille New
-              default: non
-              options:
-                non: Non
-                oui: Oui
 
 
                 

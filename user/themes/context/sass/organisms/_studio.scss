@@ -2,12 +2,14 @@
   display: flex;
 
   & > div {
+    width: calc(50% - 2.5rem);
     &:first-child {
       font-size: 1.8rem;
     }
 
     &:last-child {
       margin-left: 5rem;
+      font-style: italic;
     }
   }
 
