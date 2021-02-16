@@ -19,7 +19,7 @@ form:
               type: text
               autofocus: true
               style: vertical
-              label: PLUGIN_ADMIN.TITLE
+              label: Titre du projet
 
             content:
               type: markdown
@@ -30,7 +30,9 @@ form:
               type: pagemedia
               label: PLUGIN_ADMIN.PAGE_MEDIA
 
-
+            header.pagetitle:
+              type: text
+              label: Titre de la page
 
             header.subtitle:
               type: text
